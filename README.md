@@ -34,8 +34,7 @@ This architecture can be adapted to different industries, qualification criteria
 
 ## Workflow Preview
 
-![AI Lead Capture & Qualification Workflow](workflow.png)
-
+![AI Lead Capture & Qualification Workflow] (AI%20Lead%20Capture%20%26%20Qualification.png)
 ---
 
 ## How It Works
