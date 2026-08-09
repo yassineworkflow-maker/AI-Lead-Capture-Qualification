@@ -1,30 +1,48 @@
 # AI Lead Capture & Qualification
 
-An AI-powered lead capture and qualification workflow built with n8n.
+An AI-powered lead capture and qualification automation built with n8n, OpenAI, Google Sheets, and Gmail.
 
-This automation receives lead information through a webhook, analyzes and qualifies the lead using an AI Agent, evaluates the qualification result, saves qualified leads to Google Sheets as a CRM, and automatically sends a personalized qualification email through Gmail.
+This workflow automates the lead qualification process from the moment a potential customer submits their information. It uses AI to analyze the lead, determine qualification and priority, store qualified leads in a CRM-style Google Sheet, and send a personalized follow-up email automatically.
 
-## Workflow Overview
+## Workflow Preview
 
-The workflow follows this process:
+![AI Lead Capture & Qualification Workflow](workflow.png)
 
-1. Receive lead data through a Webhook.
-2. Send the lead information to an AI Agent.
-3. Analyze and qualify the lead using an OpenAI model.
-4. Return structured qualification data.
-5. Check whether the lead is qualified.
-6. Save qualified leads to Google Sheets.
-7. Send a personalized follow-up email through Gmail.
+## Key Features
 
-## Architecture
+- Capture leads through a Webhook
+- Analyze leads using an AI Agent
+- Qualify leads based on business requirements and budget
+- Generate structured qualification results
+- Assign a qualification score and priority
+- Automatically determine whether a lead is qualified
+- Store qualified leads in Google Sheets
+- Send personalized follow-up emails through Gmail
+- Reduce manual lead screening and follow-up work
+
+## Tech Stack
+
+- n8n
+- OpenAI
+- AI Agent
+- Structured Output Parser
+- Webhooks
+- Google Sheets
+- Gmail
+- JSON
+- n8n Expressions
+
+## Workflow Architecture
 
 ```text
-Webhook
-   ↓
+Receive Lead
+     ↓
 AI Lead Qualification
-   ↓
+     ↓
+Structured Qualification Output
+     ↓
 Is Lead Qualified?
-   ↓
+     ↓
 Save Qualified Lead to CRM
-   ↓
+     ↓
 Send Qualification Email
