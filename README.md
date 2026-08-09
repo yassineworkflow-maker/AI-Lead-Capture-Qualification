@@ -1,47 +1,48 @@
 # AI Lead Capture & Qualification
 
-An AI-powered lead capture and qualification automation built with n8n, OpenAI, Google Sheets, and Gmail.
+> An AI-powered lead qualification and follow-up automation built with n8n, OpenAI, Google Sheets, and Gmail.
 
-This workflow automates the lead qualification process from the moment a potential customer submits their information. It uses AI to analyze the lead, determine qualification and priority, store qualified leads in a CRM-style Google Sheet, and send a personalized follow-up email automatically.
+## Overview
+
+This project automates the lead qualification process from initial submission to follow-up.
+
+The workflow receives lead information through a Webhook, uses an AI Agent to analyze and qualify the lead based on predefined business criteria, generates structured qualification data, evaluates whether the lead meets the qualification requirements, stores qualified leads in a Google Sheets-based CRM, and automatically sends a follow-up email through Gmail.
+
+The goal is to reduce manual lead screening, improve response speed, and ensure that qualified prospects are processed consistently.
 
 ## Workflow Preview
 
 ![AI Lead Capture & Qualification Workflow](AI%20Lead%20Capture%20%26%20Qualification.png)
-## Key Features
 
-- Capture leads through a Webhook
-- Analyze leads using an AI Agent
-- Qualify leads based on business requirements and budget
-- Generate structured qualification results
-- Assign a qualification score and priority
-- Automatically determine whether a lead is qualified
-- Store qualified leads in Google Sheets
-- Send personalized follow-up emails through Gmail
-- Reduce manual lead screening and follow-up work
+## Business Use Case
 
-## Tech Stack
+This automation can be used by businesses that receive leads through websites, forms, landing pages, or other digital channels.
 
-- n8n
-- OpenAI
-- AI Agent
-- Structured Output Parser
-- Webhooks
-- Google Sheets
-- Gmail
-- JSON
-- n8n Expressions
+Instead of manually reviewing every lead, the automation can:
+
+- Capture incoming lead information
+- Analyze the lead using AI
+- Evaluate business requirements and budget
+- Assign qualification information
+- Determine whether the lead is qualified
+- Store qualified leads in a centralized CRM-style Google Sheet
+- Send an automated follow-up email
+
+This allows sales teams to focus their time on higher-value prospects instead of manually processing every incoming lead.
 
 ## Workflow Architecture
 
 ```text
+Lead Submission
+      ↓
 Receive Lead
-     ↓
+      ↓
 AI Lead Qualification
-     ↓
+      ↓
 Structured Qualification Output
-     ↓
+      ↓
 Is Lead Qualified?
-     ↓
+      ↓
 Save Qualified Lead to CRM
-     ↓
+      ↓
 Send Qualification Email
