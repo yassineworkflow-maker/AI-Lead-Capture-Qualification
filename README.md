@@ -8,8 +8,6 @@ This workflow automates the lead qualification process from the moment a potenti
 
 ![AI Lead Capture & Qualification Workflow]
 
-(workflow.png)
-
 ## Key Features
 
 - Capture leads through a Webhook
