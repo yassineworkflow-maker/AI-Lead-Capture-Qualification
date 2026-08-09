@@ -6,7 +6,7 @@ This workflow automates the lead qualification process from the moment a potenti
 
 ## Workflow Preview
 
-![AI Lead Capture & Qualification Workflow]
+![AI Lead Capture & Qualification Workflow]workflow.png
 
 ## Key Features
 
